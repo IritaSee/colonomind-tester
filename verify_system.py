@@ -12,13 +12,13 @@ def test_imports():
         import config
         print("✓ config.py imported successfully")
         
-        import test_dataset_manager
+        from tools import test_dataset_manager
         print("✓ test_dataset_manager.py imported successfully")
         
-        import colonoscopy_tester
+        from tools import colonoscopy_tester
         print("✓ colonoscopy_tester.py imported successfully")
         
-        import results_analyzer
+        from tools import results_analyzer
         print("✓ results_analyzer.py imported successfully")
         
         return True
@@ -49,7 +49,7 @@ def test_dataset_manager():
     """Test dataset manager initialization."""
     print("\nTesting dataset manager...")
     try:
-        from test_dataset_manager import TestDatasetManager
+        from tools.test_dataset_manager import TestDatasetManager
         
         manager = TestDatasetManager("./test_images")
         print(f"✓ Dataset manager initialized")
@@ -81,7 +81,7 @@ def test_results_analyzer():
     """Test results analyzer."""
     print("\nTesting results analyzer...")
     try:
-        from results_analyzer import ResultsAnalyzer
+        from tools.results_analyzer import ResultsAnalyzer
         
         analyzer = ResultsAnalyzer("./test_results")
         print(f"✓ Results analyzer initialized")

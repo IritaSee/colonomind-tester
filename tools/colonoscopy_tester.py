@@ -196,7 +196,9 @@ class ColonoMindTester:
                         logger.info(f"Found MES score in sidebar: {score}")
                         return score
             except NoSuchElementException:
-            # Strategy 2: Get all text content and search for MES pattern
+                pass
+            
+            # Strategy 3: Fallback - search all text for "MES Score: X" pattern
             page_text = self.driver.find_element(By.TAG_NAME, "body").text
             mes_patterns = [
                 r'ColonoScan MES Score:\s*([0-3])',

@@ -12,9 +12,9 @@ import traceback
 
 # Import our modules
 from config import *
-from test_dataset_manager import TestDatasetManager
-from colonoscopy_tester import ColonoMindTester
-from results_analyzer import ResultsAnalyzer
+from tools.test_dataset_manager import TestDatasetManager
+from tools.colonoscopy_tester import ColonoMindTester
+from tools.results_analyzer import ResultsAnalyzer
 
 
 # Set up logging

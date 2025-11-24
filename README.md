@@ -165,6 +165,28 @@ BATCH_SIZE = 100
 HEADLESS_MODE = False
 ```
 
+## Project Structure
+
+```
+colonomind-tester/
+├── config.py                    # Configuration settings
+├── run_tests.py                 # Main entry point
+├── verify_system.py             # System verification
+├── requirements.txt             # Python dependencies
+├── README.md                    # User documentation
+├── tools/                       # Core modules
+│   ├── __init__.py
+│   ├── test_dataset_manager.py  # Dataset loading and validation
+│   ├── colonoscopy_tester.py    # Selenium automation
+│   └── results_analyzer.py      # Results analysis and reporting
+└── test_images/                 # Test dataset
+    ├── MES 0/                   # MES class 0 images
+    ├── MES 1/                   # MES class 1 images
+    ├── MES 2/                   # MES class 2 images
+    ├── MES 3/                   # MES class 3 images
+    └── README.md                # Dataset structure guide
+```
+
 ## 🔍 Command-Line Options
 
 | Option | Description | Default |

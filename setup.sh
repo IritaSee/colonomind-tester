@@ -12,7 +12,9 @@ if [ ! -f "run_tests.py" ]; then
     exit 1
 fi
 
-# Step 2: Install dependencies
+# Step 2: Run venv and install dependencies
+echo "Ensure you have a conda env named 'colonomind-tester'"
+conda activate colonomind-tester
 echo "📦 Step 1: Installing Python dependencies..."
 pip3 install -r requirements.txt
 
@@ -42,7 +44,7 @@ echo ""
 echo "📋 Next Steps:"
 echo ""
 echo "1. Prepare your test dataset:"
-echo "   Place images in: test_images/1/, test_images/2/, test_images/3/, test_images/4/"
+echo "   Place images in: test_images/MES 0/, test_images/MES 1/, test_images/MES 2/, test_images/MES 3/"
 echo ""
 echo "2. Run a quick test (5 images):"
 echo "   python3 run_tests.py --max-images 5"
