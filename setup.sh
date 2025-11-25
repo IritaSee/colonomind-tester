@@ -12,15 +12,42 @@ if [ ! -f "run_tests.py" ]; then
     exit 1
 fi
 
-# Step 2: Run venv and install dependencies
-echo "Ensure you have a conda env named 'colonomind-tester'"
-# conda activate colonomind-tester
-echo "📦 Step 1: Installing Python dependencies..."
-pip3 install -r requirements.txt
+# Step 2: Create venv and install dependencies using UV
+echo "📦 Step 1: Creating virtual environment and installing dependencies with UV..."
+echo ""
+
+# Check if UV is installed
+if ! command -v uv &> /dev/null; then
+    echo "❌ Error: UV is not installed. Installing UV..."
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    if [ $? -ne 0 ]; then
+        echo "❌ Failed to install UV"
+        exit 1
+    fi
+    echo "✅ UV installed successfully"
+    echo ""
+fi
+
+# Create virtual environment if it doesn't exist
+if [ ! -d ".venv" ]; then
+    echo "Creating virtual environment..."
+    uv venv
+    if [ $? -ne 0 ]; then
+        echo "❌ Failed to create virtual environment"
+        exit 1
+    fi
+    echo "✅ Virtual environment created"
+else
+    echo "✅ Virtual environment already exists"
+fi
+
+# Activate and install dependencies
+echo "Installing dependencies..."
+source .venv/bin/activate
+uv pip install -r requirements.txt
 
 if [ $? -ne 0 ]; then
     echo "❌ Failed to install dependencies"
-    echo "💡 Try: pip3 install --user -r requirements.txt"
     exit 1
 fi
 
@@ -29,7 +56,7 @@ echo ""
 
 # Step 3: Verify system
 echo "🔍 Step 2: Verifying system..."
-python3 verify_system.py
+python verify_system.py
 
 if [ $? -ne 0 ]; then
     echo "⚠️  Some verification tests failed - please check above"

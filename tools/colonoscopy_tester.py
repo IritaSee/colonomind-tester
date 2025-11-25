@@ -62,6 +62,45 @@ class ColonoMindTester:
         
         # Wait for Streamlit to load
         time.sleep(3)
+    
+    def test_single_image(self, image_path: str) -> Tuple[Optional[int], float, bool]:
+        """
+        Test a single image.
+        
+        Args:
+            image_path: Path to the image file
+            
+        Returns:
+            Tuple of (predicted_mes_class, processing_time, success)
+        """
+        try:
+            logger.info(f"Testing image: {image_path}")
+            
+            # Start timer
+            start_time = time.time()
+            
+            # Upload image
+            if not self.upload_image(image_path):
+                return None, 0.0, False
+            
+            # Wait for processing
+            if not self.wait_for_processing():
+                return None, time.time() - start_time, False
+            
+            # Extract result
+            mes_class = self.extract_mes_classification()
+            
+            # Calculate total time
+            total_time = time.time() - start_time
+            
+            if mes_class is not None:
+                return mes_class, total_time, True
+            else:
+                return None, total_time, False
+                
+        except Exception as e:
+            logger.error(f"Error testing image {image_path}: {e}")
+            return None, 0.0, False
         
     def upload_image(self, image_path: str, upload_timeout: int = 15) -> bool:
         """
@@ -244,6 +283,15 @@ class ColonoMindTester:
             
         except Exception as e:
             logger.error(f"Error resetting webapp: {e}")
+    
+    def save_screenshot(self, filename: str):
+        """Save a screenshot of the current page."""
+        try:
+            if self.driver:
+                self.driver.save_screenshot(filename)
+                logger.info(f"Screenshot saved to {filename}")
+        except Exception as e:
+            logger.error(f"Error saving screenshot: {e}")
     
     def cleanup(self):
         """Clean up resources."""

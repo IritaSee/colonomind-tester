@@ -324,3 +324,63 @@ Cleaning up...
 2025-11-25 11:04:24,420 - __main__ - INFO - 
 Results saved to: ./results
 2025-11-25 11:04:24,420 - __main__ - INFO - ================================================================================
+2025-11-25 11:33:11,109 - __main__ - INFO - ================================================================================
+2025-11-25 11:33:11,109 - __main__ - INFO - ColonoMind Automated Testing System
+2025-11-25 11:33:11,109 - __main__ - INFO - ================================================================================
+2025-11-25 11:33:11,109 - __main__ - INFO - 
+[Step 1/5] Loading test dataset from: ./test_images
+2025-11-25 11:33:11,121 - tools.test_dataset_manager - INFO - Loaded 997 images from test_images
+2025-11-25 11:33:11,121 - __main__ - INFO - Class distribution:
+2025-11-25 11:33:11,122 - __main__ - INFO -   MES 0: 354 images
+2025-11-25 11:33:11,122 - __main__ - INFO -   MES 1: 209 images
+2025-11-25 11:33:11,122 - __main__ - INFO -   MES 2: 201 images
+2025-11-25 11:33:11,122 - __main__ - INFO -   MES 3: 233 images
+2025-11-25 11:33:11,122 - __main__ - INFO - Validating dataset...
+2025-11-25 11:33:11,124 - __main__ - INFO - Limited to 1 images for testing
+2025-11-25 11:33:11,124 - __main__ - INFO - 
+[Step 2/5] Initializing browser automation...
+2025-11-25 11:33:11,124 - WDM - INFO - ====== WebDriver manager ======
+2025-11-25 11:33:11,227 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-25 11:33:11,888 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-25 11:33:12,181 - WDM - INFO - Driver [/Users/iganarendra/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver] found in cache
+2025-11-25 11:33:12,942 - tools.colonoscopy_tester - INFO - WebDriver initialized successfully
+2025-11-25 11:33:12,942 - tools.colonoscopy_tester - INFO - Navigating to https://colonomind-335955344592.asia-southeast1.run.app/
+2025-11-25 11:33:19,912 - __main__ - INFO - 
+[Step 3/5] Setting up results tracking...
+2025-11-25 11:33:19,913 - __main__ - INFO - 
+[Step 4/5] Running tests on 1 images...
+2025-11-25 11:33:19,913 - __main__ - INFO - Webapp URL: https://colonomind-335955344592.asia-southeast1.run.app/
+2025-11-25 11:33:19,913 - __main__ - INFO - Headless mode: True
+2025-11-25 11:33:19,913 - __main__ - INFO - Batch size: 100
+2025-11-25 11:33:19,913 - __main__ - INFO - 
+2025-11-25 11:33:19,925 - tools.colonoscopy_tester - INFO - Testing image: /Users/iganarendra/.gemini/antigravity/scratch/colonomind-tester/test_images/MES0/2111154_20211027_ES_1_19_19.jpg
+2025-11-25 11:33:19,926 - tools.colonoscopy_tester - INFO - Uploading image: 2111154_20211027_ES_1_19_19.jpg
+2025-11-25 11:33:20,706 - tools.colonoscopy_tester - INFO - Image file sent to upload input
+2025-11-25 11:33:21,467 - tools.colonoscopy_tester - INFO - Found 'Start Analysis' button, clicking...
+2025-11-25 11:33:21,493 - tools.colonoscopy_tester - INFO - Waiting for classification to complete...
+2025-11-25 11:33:23,799 - tools.colonoscopy_tester - INFO - Processing completed (Result card found)
+2025-11-25 11:33:23,799 - tools.colonoscopy_tester - INFO - Extracting MES classification...
+2025-11-25 11:33:23,812 - tools.colonoscopy_tester - INFO - Found MES score in result card: 2
+2025-11-25 11:33:23,813 - __main__ - INFO - 
+[Step 5/5] Generating reports...
+2025-11-25 11:33:23,817 - tools.results_analyzer - INFO - Detailed results saved to results/results_detailed.csv
+2025-11-25 11:33:23,817 - __main__ - INFO - ✓ Detailed results: results/results_detailed.csv
+2025-11-25 11:33:23,818 - tools.results_analyzer - INFO - Summary saved to results/results_summary.json
+2025-11-25 11:33:23,818 - __main__ - INFO - ✓ Summary: results/results_summary.json
+2025-11-25 11:33:24,046 - tools.results_analyzer - INFO - Confusion matrix saved to results/confusion_matrix.png
+2025-11-25 11:33:24,046 - __main__ - INFO - ✓ Confusion matrix: results/confusion_matrix.png
+2025-11-25 11:33:24,047 - tools.results_analyzer - INFO - Report saved to results/REPORT.md
+2025-11-25 11:33:24,047 - __main__ - INFO - ✓ Report: results/REPORT.md
+2025-11-25 11:33:24,047 - __main__ - INFO - 
+Cleaning up...
+2025-11-25 11:33:24,114 - tools.colonoscopy_tester - INFO - WebDriver closed
+2025-11-25 11:33:24,114 - __main__ - INFO - 
+================================================================================
+2025-11-25 11:33:24,114 - __main__ - INFO - TESTING COMPLETE
+2025-11-25 11:33:24,114 - __main__ - INFO - ================================================================================
+2025-11-25 11:33:24,114 - __main__ - INFO - Total images processed: 1
+2025-11-25 11:33:24,114 - __main__ - INFO - Failed tests: 0
+2025-11-25 11:33:24,114 - __main__ - INFO - Success rate: 100.0%
+2025-11-25 11:33:24,115 - __main__ - INFO - 
+Results saved to: ./results
+2025-11-25 11:33:24,115 - __main__ - INFO - ================================================================================
