@@ -14,7 +14,7 @@ fi
 
 # Step 2: Run venv and install dependencies
 echo "Ensure you have a conda env named 'colonomind-tester'"
-conda activate colonomind-tester
+# conda activate colonomind-tester
 echo "📦 Step 1: Installing Python dependencies..."
 pip3 install -r requirements.txt
 

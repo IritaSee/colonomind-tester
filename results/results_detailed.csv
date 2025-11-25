@@ -1,0 +1,6 @@
+image_path,image_name,ground_truth,predicted,processing_time,success,correct,error
+/Users/iganarendra/.gemini/antigravity/scratch/colonomind-tester/test_images/MES0/2111154_20211027_ES_1_19_19.jpg,2111154_20211027_ES_1_19_19.jpg,0,2,3.01361083984375,True,False,
+/Users/iganarendra/.gemini/antigravity/scratch/colonomind-tester/test_images/MES0/4383318_20230808_ES_1_14_14.jpg,4383318_20230808_ES_1_14_14.jpg,0,0,2.9943318367004395,True,True,
+/Users/iganarendra/.gemini/antigravity/scratch/colonomind-tester/test_images/MES0/2119649_20220217_ES_1_23_23.jpg,2119649_20220217_ES_1_23_23.jpg,0,3,2.96091890335083,True,False,
+/Users/iganarendra/.gemini/antigravity/scratch/colonomind-tester/test_images/MES0/4283115_20240801_ES_1_29_29.jpg,4283115_20240801_ES_1_29_29.jpg,0,2,3.6742489337921143,True,False,
+/Users/iganarendra/.gemini/antigravity/scratch/colonomind-tester/test_images/MES0/2610968_20241213_ES_1_21_21.jpg,2610968_20241213_ES_1_21_21.jpg,0,3,3.0663537979125977,True,False,

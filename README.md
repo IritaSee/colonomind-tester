@@ -1,6 +1,8 @@
 # ColonoMind Automated Testing System
 
-Automated testing system for the ColonoMind webapp using Python and Selenium. Tests colonoscopy image classification for MES scoring (1-4) with performance and accuracy metrics.
+Automated testing system for the ColonoMind webapp using Python and Selenium. Tests colonoscopy image classification for MES scoring (0-3) with performance and accuracy metrics.
+
+**Built with UV** - Fast, reliable Python package management (10-100x faster than pip)
 
 ## 🎯 Features
 
@@ -20,23 +22,80 @@ Automated testing system for the ColonoMind webapp using Python and Selenium. Te
 
 ## 🚀 Installation
 
-### 1. Clone or Download
+This project uses **UV** for fast and reliable Python dependency management.
 
-Navigate to the project directory:
-
-### 2. Install Dependencies
+### Quick Setup (Recommended)
 
 ```bash
-pip install -r requirements.txt
+# Run the automated setup script
+./setup.sh
 ```
 
-This will install:
+This will:
+- Check if UV is installed (install if needed)
+- Create a virtual environment (`.venv/`)
+- Install all dependencies
+- Verify the system is ready
+
+### Manual Setup
+
+#### 1. Install UV (if not already installed)
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+#### 2. Create Virtual Environment
+
+```bash
+uv venv
+```
+
+#### 3. Activate Environment
+
+```bash
+source .venv/bin/activate
+# or use the helper script
+source activate.sh
+```
+
+#### 4. Install Dependencies
+
+```bash
+uv pip install -r requirements.txt
+```
+
+### What Gets Installed
+
 - `selenium` - Browser automation
 - `webdriver-manager` - Automatic ChromeDriver management
 - `pandas` - Data manipulation
 - `matplotlib` & `seaborn` - Visualization
 - `scikit-learn` - Accuracy metrics
 - `tqdm` - Progress bars
+
+### Why UV?
+
+✅ **10-100x faster** than pip  
+✅ **Reliable** dependency resolution  
+✅ **Compatible** with pip and requirements.txt  
+✅ **No configuration** needed - drop-in replacement
+
+### Environment Management
+
+```bash
+# Activate environment
+source activate.sh
+
+# Deactivate environment
+deactivate
+
+# Verify installation
+python verify_system.py
+
+# Check Python version
+python --version
+```
 
 ## 📂 Preparing Test Dataset
 
@@ -165,26 +224,30 @@ BATCH_SIZE = 100
 HEADLESS_MODE = False
 ```
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 colonomind-tester/
+├── .venv/                       # UV virtual environment (gitignored)
+├── tools/                       # Core modules
+│   ├── __init__.py
+│   ├── colonoscopy_tester.py    # Selenium automation
+│   ├── test_dataset_manager.py  # Dataset loading
+│   └── results_analyzer.py      # Results analysis
+├── test_images/                 # Test dataset
+│   ├── MES 0/                   # MES class 0 images
+│   ├── MES 1/                   # MES class 1 images
+│   ├── MES 2/                   # MES class 2 images
+│   └── MES 3/                   # MES class 3 images
+├── results/                     # Test results (gitignored)
 ├── config.py                    # Configuration settings
 ├── run_tests.py                 # Main entry point
 ├── verify_system.py             # System verification
+├── setup.sh                     # Automated setup script
+├── activate.sh                  # Quick activation helper
 ├── requirements.txt             # Python dependencies
-├── README.md                    # User documentation
-├── tools/                       # Core modules
-│   ├── __init__.py
-│   ├── test_dataset_manager.py  # Dataset loading and validation
-│   ├── colonoscopy_tester.py    # Selenium automation
-│   └── results_analyzer.py      # Results analysis and reporting
-└── test_images/                 # Test dataset
-    ├── MES 0/                   # MES class 0 images
-    ├── MES 1/                   # MES class 1 images
-    ├── MES 2/                   # MES class 2 images
-    ├── MES 3/                   # MES class 3 images
-    └── README.md                # Dataset structure guide
+├── README.md                    # This file
+└── QUICK_REFERENCE.md           # Quick command reference
 ```
 
 ## 🔍 Command-Line Options
@@ -220,27 +283,72 @@ The system auto-downloads ChromeDriver. If you encounter issues:
 - Increase `PROCESSING_TIMEOUT` in `config.py`
 - Check if webapp is accessible manually
 
+### Virtual Environment Issues
+
+**Environment not found:**
+```bash
+./setup.sh  # Recreate environment
+```
+
+**Dependencies out of sync:**
+```bash
+source activate.sh
+uv pip install -r requirements.txt
+```
+
+**UV not installed:**
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+**Import errors:**
+```bash
+# Make sure environment is activated
+source activate.sh
+python verify_system.py
+```
+
+**Wrong Python version:**
+```bash
+# Check which Python is being used
+which python
+python --version
+# Should show .venv/bin/python and Python 3.13+
+```
+
 ## 📝 Example Workflow
 
-### 1. Small Test Run
+### 1. Setup and Verify
+```bash
+# First time setup
+./setup.sh
+
+# Activate environment
+source activate.sh
+
+# Verify system
+python verify_system.py
+```
+
+### 2. Small Test Run
 First, verify everything works with a few images:
 ```bash
 python run_tests.py --max-images 5
 ```
 
-### 2. Review Results
+### 3. Review Results
 Check the output:
 ```bash
 cat results/REPORT.md
 ```
 
-### 3. Full Test Run
+### 4. Full Test Run
 Run the complete 1000-image test:
 ```bash
 python run_tests.py --headless --batch-size 100
 ```
 
-### 4. Monitor Progress
+### 5. Monitor Progress
 Watch the progress bar and logs:
 ```
 Testing images: 45%|████▌     | 450/1000 [45:23<50:12, 5.48s/img] 

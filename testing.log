@@ -1,0 +1,326 @@
+2025-11-25 10:53:34,400 - __main__ - INFO - ================================================================================
+2025-11-25 10:53:34,400 - __main__ - INFO - ColonoMind Automated Testing System
+2025-11-25 10:53:34,400 - __main__ - INFO - ================================================================================
+2025-11-25 10:53:34,400 - __main__ - INFO - 
+[Step 1/5] Loading test dataset from: ./test_images
+2025-11-25 10:53:34,411 - tools.test_dataset_manager - INFO - Loaded 997 images from test_images
+2025-11-25 10:53:34,411 - __main__ - INFO - Class distribution:
+2025-11-25 10:53:34,411 - __main__ - INFO -   MES 0: 354 images
+2025-11-25 10:53:34,411 - __main__ - INFO -   MES 1: 209 images
+2025-11-25 10:53:34,411 - __main__ - INFO -   MES 2: 201 images
+2025-11-25 10:53:34,411 - __main__ - INFO -   MES 3: 233 images
+2025-11-25 10:53:34,411 - __main__ - INFO - Validating dataset...
+2025-11-25 10:53:34,412 - __main__ - INFO - Limited to 1 images for testing
+2025-11-25 10:53:34,412 - __main__ - INFO - 
+[Step 2/5] Initializing browser automation...
+2025-11-25 10:53:34,412 - WDM - INFO - ====== WebDriver manager ======
+2025-11-25 10:53:34,497 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-25 10:53:34,958 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-25 10:53:35,073 - WDM - INFO - There is no [mac64] chromedriver "142.0.7444.175" for browser google-chrome "142.0.7444" in cache
+2025-11-25 10:53:35,086 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-25 10:53:35,395 - WDM - INFO - WebDriver version 142.0.7444.175 selected
+2025-11-25 10:53:35,399 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.175/mac-arm64/chromedriver-mac-arm64.zip
+2025-11-25 10:53:35,399 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.175/mac-arm64/chromedriver-mac-arm64.zip
+2025-11-25 10:53:35,721 - WDM - INFO - Driver downloading response is 200
+2025-11-25 10:53:41,675 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-25 10:53:42,339 - WDM - INFO - Driver has been saved in cache [/Users/iganarendra/.wdm/drivers/chromedriver/mac64/142.0.7444.175]
+2025-11-25 10:53:42,840 - tools.colonoscopy_tester - INFO - WebDriver initialized successfully
+2025-11-25 10:53:42,840 - tools.colonoscopy_tester - INFO - Navigating to https://colonomind-335955344592.asia-southeast1.run.app/
+2025-11-25 10:53:55,881 - __main__ - INFO - 
+[Step 3/5] Setting up results tracking...
+2025-11-25 10:53:55,882 - __main__ - INFO - 
+[Step 4/5] Running tests on 1 images...
+2025-11-25 10:53:55,882 - __main__ - INFO - Webapp URL: https://colonomind-335955344592.asia-southeast1.run.app/
+2025-11-25 10:53:55,882 - __main__ - INFO - Headless mode: True
+2025-11-25 10:53:55,882 - __main__ - INFO - Batch size: 100
+2025-11-25 10:53:55,882 - __main__ - INFO - 
+2025-11-25 10:53:55,899 - __main__ - ERROR - Error processing /Users/iganarendra/.gemini/antigravity/scratch/colonomind-tester/test_images/MES0/2111154_20211027_ES_1_19_19.jpg: 'ColonoMindTester' object has no attribute 'test_single_image'
+2025-11-25 10:53:55,901 - __main__ - INFO - 
+[Step 5/5] Generating reports...
+2025-11-25 10:53:55,909 - tools.results_analyzer - INFO - Detailed results saved to results/results_detailed.csv
+2025-11-25 10:53:55,909 - __main__ - INFO - ✓ Detailed results: results/results_detailed.csv
+2025-11-25 10:53:55,910 - tools.results_analyzer - INFO - Summary saved to results/results_summary.json
+2025-11-25 10:53:55,910 - __main__ - INFO - ✓ Summary: results/results_summary.json
+2025-11-25 10:53:55,910 - tools.results_analyzer - WARNING - No successful results to generate confusion matrix
+2025-11-25 10:53:55,910 - tools.results_analyzer - INFO - Report saved to results/REPORT.md
+2025-11-25 10:53:55,910 - __main__ - INFO - ✓ Report: results/REPORT.md
+2025-11-25 10:53:55,910 - __main__ - INFO - 
+Cleaning up...
+2025-11-25 10:53:55,980 - tools.colonoscopy_tester - INFO - WebDriver closed
+2025-11-25 10:53:55,980 - __main__ - INFO - 
+================================================================================
+2025-11-25 10:53:55,980 - __main__ - INFO - TESTING COMPLETE
+2025-11-25 10:53:55,980 - __main__ - INFO - ================================================================================
+2025-11-25 10:53:55,980 - __main__ - INFO - Total images processed: 0
+2025-11-25 10:53:55,980 - __main__ - INFO - Failed tests: 1
+2025-11-25 10:53:55,980 - __main__ - ERROR - Unexpected error: division by zero
+2025-11-25 10:55:27,892 - __main__ - INFO - ================================================================================
+2025-11-25 10:55:27,892 - __main__ - INFO - ColonoMind Automated Testing System
+2025-11-25 10:55:27,892 - __main__ - INFO - ================================================================================
+2025-11-25 10:55:27,892 - __main__ - INFO - 
+[Step 1/5] Loading test dataset from: ./test_images
+2025-11-25 10:55:27,903 - tools.test_dataset_manager - INFO - Loaded 997 images from test_images
+2025-11-25 10:55:27,903 - __main__ - INFO - Class distribution:
+2025-11-25 10:55:27,903 - __main__ - INFO -   MES 0: 354 images
+2025-11-25 10:55:27,903 - __main__ - INFO -   MES 1: 209 images
+2025-11-25 10:55:27,903 - __main__ - INFO -   MES 2: 201 images
+2025-11-25 10:55:27,903 - __main__ - INFO -   MES 3: 233 images
+2025-11-25 10:55:27,903 - __main__ - INFO - Validating dataset...
+2025-11-25 10:55:27,904 - __main__ - INFO - Limited to 1 images for testing
+2025-11-25 10:55:27,905 - __main__ - INFO - 
+[Step 2/5] Initializing browser automation...
+2025-11-25 10:55:27,905 - WDM - INFO - ====== WebDriver manager ======
+2025-11-25 10:55:27,981 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-25 10:55:28,080 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-25 10:55:28,190 - WDM - INFO - Driver [/Users/iganarendra/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver] found in cache
+2025-11-25 10:55:28,728 - tools.colonoscopy_tester - INFO - WebDriver initialized successfully
+2025-11-25 10:55:28,729 - tools.colonoscopy_tester - INFO - Navigating to https://colonomind-335955344592.asia-southeast1.run.app/
+2025-11-25 10:55:33,484 - __main__ - INFO - 
+[Step 3/5] Setting up results tracking...
+2025-11-25 10:55:33,485 - __main__ - INFO - 
+[Step 4/5] Running tests on 1 images...
+2025-11-25 10:55:33,486 - __main__ - INFO - Webapp URL: https://colonomind-335955344592.asia-southeast1.run.app/
+2025-11-25 10:55:33,486 - __main__ - INFO - Headless mode: True
+2025-11-25 10:55:33,486 - __main__ - INFO - Batch size: 100
+2025-11-25 10:55:33,486 - __main__ - INFO - 
+2025-11-25 10:55:33,509 - tools.colonoscopy_tester - INFO - Testing image: /Users/iganarendra/.gemini/antigravity/scratch/colonomind-tester/test_images/MES0/2111154_20211027_ES_1_19_19.jpg
+2025-11-25 10:55:33,509 - tools.colonoscopy_tester - INFO - Uploading image: 2111154_20211027_ES_1_19_19.jpg
+2025-11-25 10:55:43,537 - tools.colonoscopy_tester - ERROR - No file input found on page
+2025-11-25 10:55:43,539 - __main__ - ERROR - Error processing /Users/iganarendra/.gemini/antigravity/scratch/colonomind-tester/test_images/MES0/2111154_20211027_ES_1_19_19.jpg: 'ColonoMindTester' object has no attribute 'save_screenshot'
+2025-11-25 10:55:43,543 - __main__ - INFO - 
+[Step 5/5] Generating reports...
+2025-11-25 10:55:43,572 - tools.results_analyzer - INFO - Detailed results saved to results/results_detailed.csv
+2025-11-25 10:55:43,572 - __main__ - INFO - ✓ Detailed results: results/results_detailed.csv
+2025-11-25 10:55:43,572 - tools.results_analyzer - INFO - Summary saved to results/results_summary.json
+2025-11-25 10:55:43,572 - __main__ - INFO - ✓ Summary: results/results_summary.json
+2025-11-25 10:55:43,572 - tools.results_analyzer - WARNING - No successful results to generate confusion matrix
+2025-11-25 10:55:43,572 - tools.results_analyzer - INFO - Report saved to results/REPORT.md
+2025-11-25 10:55:43,572 - __main__ - INFO - ✓ Report: results/REPORT.md
+2025-11-25 10:55:43,572 - __main__ - INFO - 
+Cleaning up...
+2025-11-25 10:55:43,652 - tools.colonoscopy_tester - INFO - WebDriver closed
+2025-11-25 10:55:43,652 - __main__ - INFO - 
+================================================================================
+2025-11-25 10:55:43,652 - __main__ - INFO - TESTING COMPLETE
+2025-11-25 10:55:43,652 - __main__ - INFO - ================================================================================
+2025-11-25 10:55:43,652 - __main__ - INFO - Total images processed: 0
+2025-11-25 10:55:43,652 - __main__ - INFO - Failed tests: 2
+2025-11-25 10:55:43,652 - __main__ - INFO - Success rate: N/A (0 images processed)
+2025-11-25 10:55:43,652 - __main__ - INFO - 
+Results saved to: ./results
+2025-11-25 10:55:43,652 - __main__ - INFO - ================================================================================
+2025-11-25 10:56:16,462 - __main__ - INFO - ================================================================================
+2025-11-25 10:56:16,462 - __main__ - INFO - ColonoMind Automated Testing System
+2025-11-25 10:56:16,462 - __main__ - INFO - ================================================================================
+2025-11-25 10:56:16,462 - __main__ - INFO - 
+[Step 1/5] Loading test dataset from: ./test_images
+2025-11-25 10:56:16,474 - tools.test_dataset_manager - INFO - Loaded 997 images from test_images
+2025-11-25 10:56:16,474 - __main__ - INFO - Class distribution:
+2025-11-25 10:56:16,474 - __main__ - INFO -   MES 0: 354 images
+2025-11-25 10:56:16,474 - __main__ - INFO -   MES 1: 209 images
+2025-11-25 10:56:16,474 - __main__ - INFO -   MES 2: 201 images
+2025-11-25 10:56:16,474 - __main__ - INFO -   MES 3: 233 images
+2025-11-25 10:56:16,474 - __main__ - INFO - Validating dataset...
+2025-11-25 10:56:16,475 - __main__ - INFO - Limited to 1 images for testing
+2025-11-25 10:56:16,475 - __main__ - INFO - 
+[Step 2/5] Initializing browser automation...
+2025-11-25 10:56:16,475 - WDM - INFO - ====== WebDriver manager ======
+2025-11-25 10:56:16,554 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-25 10:56:17,023 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-25 10:56:17,357 - WDM - INFO - Driver [/Users/iganarendra/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver] found in cache
+2025-11-25 10:56:17,985 - tools.colonoscopy_tester - INFO - WebDriver initialized successfully
+2025-11-25 10:56:17,985 - tools.colonoscopy_tester - INFO - Navigating to https://colonomind-335955344592.asia-southeast1.run.app/
+2025-11-25 10:56:23,751 - __main__ - INFO - 
+[Step 3/5] Setting up results tracking...
+2025-11-25 10:56:23,752 - __main__ - INFO - 
+[Step 4/5] Running tests on 1 images...
+2025-11-25 10:56:23,752 - __main__ - INFO - Webapp URL: https://colonomind-335955344592.asia-southeast1.run.app/
+2025-11-25 10:56:23,752 - __main__ - INFO - Headless mode: True
+2025-11-25 10:56:23,752 - __main__ - INFO - Batch size: 100
+2025-11-25 10:56:23,752 - __main__ - INFO - 
+2025-11-25 10:56:23,773 - tools.colonoscopy_tester - INFO - Testing image: /Users/iganarendra/.gemini/antigravity/scratch/colonomind-tester/test_images/MES0/2111154_20211027_ES_1_19_19.jpg
+2025-11-25 10:56:23,773 - tools.colonoscopy_tester - INFO - Uploading image: 2111154_20211027_ES_1_19_19.jpg
+2025-11-25 10:56:33,786 - tools.colonoscopy_tester - ERROR - No file input found on page
+2025-11-25 10:56:33,841 - tools.colonoscopy_tester - INFO - Screenshot saved to results/error_0_2111154_20211027_ES_1_19_19.png
+2025-11-25 10:56:33,842 - __main__ - INFO - 
+[Step 5/5] Generating reports...
+2025-11-25 10:56:33,848 - tools.results_analyzer - INFO - Detailed results saved to results/results_detailed.csv
+2025-11-25 10:56:33,848 - __main__ - INFO - ✓ Detailed results: results/results_detailed.csv
+2025-11-25 10:56:33,848 - tools.results_analyzer - INFO - Summary saved to results/results_summary.json
+2025-11-25 10:56:33,848 - __main__ - INFO - ✓ Summary: results/results_summary.json
+2025-11-25 10:56:33,848 - tools.results_analyzer - WARNING - No successful results to generate confusion matrix
+2025-11-25 10:56:33,848 - tools.results_analyzer - INFO - Report saved to results/REPORT.md
+2025-11-25 10:56:33,848 - __main__ - INFO - ✓ Report: results/REPORT.md
+2025-11-25 10:56:33,848 - __main__ - INFO - 
+Cleaning up...
+2025-11-25 10:56:33,926 - tools.colonoscopy_tester - INFO - WebDriver closed
+2025-11-25 10:56:33,926 - __main__ - INFO - 
+================================================================================
+2025-11-25 10:56:33,926 - __main__ - INFO - TESTING COMPLETE
+2025-11-25 10:56:33,926 - __main__ - INFO - ================================================================================
+2025-11-25 10:56:33,926 - __main__ - INFO - Total images processed: 1
+2025-11-25 10:56:33,926 - __main__ - INFO - Failed tests: 1
+2025-11-25 10:56:33,926 - __main__ - INFO - Success rate: 0.0%
+2025-11-25 10:56:33,926 - __main__ - INFO - 
+Results saved to: ./results
+2025-11-25 10:56:33,926 - __main__ - INFO - ================================================================================
+2025-11-25 10:57:02,727 - __main__ - INFO - ================================================================================
+2025-11-25 10:57:02,728 - __main__ - INFO - ColonoMind Automated Testing System
+2025-11-25 10:57:02,728 - __main__ - INFO - ================================================================================
+2025-11-25 10:57:02,728 - __main__ - INFO - 
+[Step 1/5] Loading test dataset from: ./test_images
+2025-11-25 10:57:02,739 - tools.test_dataset_manager - INFO - Loaded 997 images from test_images
+2025-11-25 10:57:02,739 - __main__ - INFO - Class distribution:
+2025-11-25 10:57:02,739 - __main__ - INFO -   MES 0: 354 images
+2025-11-25 10:57:02,739 - __main__ - INFO -   MES 1: 209 images
+2025-11-25 10:57:02,739 - __main__ - INFO -   MES 2: 201 images
+2025-11-25 10:57:02,739 - __main__ - INFO -   MES 3: 233 images
+2025-11-25 10:57:02,739 - __main__ - INFO - Validating dataset...
+2025-11-25 10:57:02,741 - __main__ - INFO - Limited to 1 images for testing
+2025-11-25 10:57:02,741 - __main__ - INFO - 
+[Step 2/5] Initializing browser automation...
+2025-11-25 10:57:02,741 - WDM - INFO - ====== WebDriver manager ======
+2025-11-25 10:57:02,824 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-25 10:57:03,617 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-25 10:57:04,126 - WDM - INFO - Driver [/Users/iganarendra/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver] found in cache
+2025-11-25 10:57:04,619 - tools.colonoscopy_tester - INFO - WebDriver initialized successfully
+2025-11-25 10:57:04,619 - tools.colonoscopy_tester - INFO - Navigating to https://colonomind-335955344592.asia-southeast1.run.app/
+2025-11-25 10:57:09,960 - __main__ - INFO - 
+[Step 3/5] Setting up results tracking...
+2025-11-25 10:57:09,962 - __main__ - INFO - 
+[Step 4/5] Running tests on 1 images...
+2025-11-25 10:57:09,962 - __main__ - INFO - Webapp URL: https://colonomind-335955344592.asia-southeast1.run.app/
+2025-11-25 10:57:09,962 - __main__ - INFO - Headless mode: True
+2025-11-25 10:57:09,962 - __main__ - INFO - Batch size: 100
+2025-11-25 10:57:09,962 - __main__ - INFO - 
+2025-11-25 10:57:09,983 - tools.colonoscopy_tester - INFO - Testing image: /Users/iganarendra/.gemini/antigravity/scratch/colonomind-tester/test_images/MES0/2111154_20211027_ES_1_19_19.jpg
+2025-11-25 10:57:09,983 - tools.colonoscopy_tester - INFO - Uploading image: 2111154_20211027_ES_1_19_19.jpg
+2025-11-25 10:57:10,499 - tools.colonoscopy_tester - INFO - Image file sent to upload input
+2025-11-25 10:57:12,746 - tools.colonoscopy_tester - INFO - Found 'Start Analysis' button, clicking...
+2025-11-25 10:57:12,776 - tools.colonoscopy_tester - INFO - Waiting for classification to complete...
+2025-11-25 10:57:25,648 - tools.colonoscopy_tester - INFO - Processing completed (Analysis Results header found)
+2025-11-25 10:57:25,649 - tools.colonoscopy_tester - INFO - Extracting MES classification...
+2025-11-25 10:57:25,659 - tools.colonoscopy_tester - INFO - Found MES score in result card: 2
+2025-11-25 10:57:25,660 - __main__ - INFO - 
+[Step 5/5] Generating reports...
+2025-11-25 10:57:25,664 - tools.results_analyzer - INFO - Detailed results saved to results/results_detailed.csv
+2025-11-25 10:57:25,664 - __main__ - INFO - ✓ Detailed results: results/results_detailed.csv
+2025-11-25 10:57:25,665 - tools.results_analyzer - INFO - Summary saved to results/results_summary.json
+2025-11-25 10:57:25,666 - __main__ - INFO - ✓ Summary: results/results_summary.json
+2025-11-25 10:57:25,916 - tools.results_analyzer - INFO - Confusion matrix saved to results/confusion_matrix.png
+2025-11-25 10:57:25,916 - __main__ - INFO - ✓ Confusion matrix: results/confusion_matrix.png
+2025-11-25 10:57:25,916 - tools.results_analyzer - INFO - Report saved to results/REPORT.md
+2025-11-25 10:57:25,916 - __main__ - INFO - ✓ Report: results/REPORT.md
+2025-11-25 10:57:25,916 - __main__ - INFO - 
+Cleaning up...
+2025-11-25 10:57:25,991 - tools.colonoscopy_tester - INFO - WebDriver closed
+2025-11-25 10:57:25,991 - __main__ - INFO - 
+================================================================================
+2025-11-25 10:57:25,991 - __main__ - INFO - TESTING COMPLETE
+2025-11-25 10:57:25,991 - __main__ - INFO - ================================================================================
+2025-11-25 10:57:25,991 - __main__ - INFO - Total images processed: 1
+2025-11-25 10:57:25,991 - __main__ - INFO - Failed tests: 0
+2025-11-25 10:57:25,991 - __main__ - INFO - Success rate: 100.0%
+2025-11-25 10:57:25,991 - __main__ - INFO - 
+Results saved to: ./results
+2025-11-25 10:57:25,991 - __main__ - INFO - ================================================================================
+2025-11-25 11:03:54,357 - __main__ - INFO - ================================================================================
+2025-11-25 11:03:54,357 - __main__ - INFO - ColonoMind Automated Testing System
+2025-11-25 11:03:54,357 - __main__ - INFO - ================================================================================
+2025-11-25 11:03:54,357 - __main__ - INFO - 
+[Step 1/5] Loading test dataset from: ./test_images
+2025-11-25 11:03:54,369 - tools.test_dataset_manager - INFO - Loaded 997 images from test_images
+2025-11-25 11:03:54,370 - __main__ - INFO - Class distribution:
+2025-11-25 11:03:54,370 - __main__ - INFO -   MES 0: 354 images
+2025-11-25 11:03:54,370 - __main__ - INFO -   MES 1: 209 images
+2025-11-25 11:03:54,370 - __main__ - INFO -   MES 2: 201 images
+2025-11-25 11:03:54,370 - __main__ - INFO -   MES 3: 233 images
+2025-11-25 11:03:54,370 - __main__ - INFO - Validating dataset...
+2025-11-25 11:03:54,371 - __main__ - INFO - Limited to 5 images for testing
+2025-11-25 11:03:54,371 - __main__ - INFO - 
+[Step 2/5] Initializing browser automation...
+2025-11-25 11:03:54,371 - WDM - INFO - ====== WebDriver manager ======
+2025-11-25 11:03:54,461 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-25 11:03:54,574 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-25 11:03:54,759 - WDM - INFO - Driver [/Users/iganarendra/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver] found in cache
+2025-11-25 11:03:55,299 - tools.colonoscopy_tester - INFO - WebDriver initialized successfully
+2025-11-25 11:03:55,299 - tools.colonoscopy_tester - INFO - Navigating to https://colonomind-335955344592.asia-southeast1.run.app/
+2025-11-25 11:04:00,237 - __main__ - INFO - 
+[Step 3/5] Setting up results tracking...
+2025-11-25 11:04:00,238 - __main__ - INFO - 
+[Step 4/5] Running tests on 5 images...
+2025-11-25 11:04:00,238 - __main__ - INFO - Webapp URL: https://colonomind-335955344592.asia-southeast1.run.app/
+2025-11-25 11:04:00,239 - __main__ - INFO - Headless mode: True
+2025-11-25 11:04:00,239 - __main__ - INFO - Batch size: 100
+2025-11-25 11:04:00,239 - __main__ - INFO - 
+2025-11-25 11:04:00,255 - tools.colonoscopy_tester - INFO - Testing image: /Users/iganarendra/.gemini/antigravity/scratch/colonomind-tester/test_images/MES0/2111154_20211027_ES_1_19_19.jpg
+2025-11-25 11:04:00,256 - tools.colonoscopy_tester - INFO - Uploading image: 2111154_20211027_ES_1_19_19.jpg
+2025-11-25 11:04:00,286 - tools.colonoscopy_tester - INFO - Image file sent to upload input
+2025-11-25 11:04:00,906 - tools.colonoscopy_tester - INFO - Found 'Start Analysis' button, clicking...
+2025-11-25 11:04:00,975 - tools.colonoscopy_tester - INFO - Waiting for classification to complete...
+2025-11-25 11:04:03,257 - tools.colonoscopy_tester - INFO - Processing completed (Result card found)
+2025-11-25 11:04:03,258 - tools.colonoscopy_tester - INFO - Extracting MES classification...
+2025-11-25 11:04:03,269 - tools.colonoscopy_tester - INFO - Found MES score in result card: 2
+2025-11-25 11:04:03,270 - tools.colonoscopy_tester - INFO - Resetting webapp for next image...
+2025-11-25 11:04:03,276 - tools.colonoscopy_tester - INFO - Clicking 'Analyze New Image' button
+2025-11-25 11:04:05,305 - tools.colonoscopy_tester - INFO - Testing image: /Users/iganarendra/.gemini/antigravity/scratch/colonomind-tester/test_images/MES0/4383318_20230808_ES_1_14_14.jpg
+2025-11-25 11:04:05,305 - tools.colonoscopy_tester - INFO - Uploading image: 4383318_20230808_ES_1_14_14.jpg
+2025-11-25 11:04:05,331 - tools.colonoscopy_tester - INFO - Image file sent to upload input
+2025-11-25 11:04:05,888 - tools.colonoscopy_tester - INFO - Found 'Start Analysis' button, clicking...
+2025-11-25 11:04:05,912 - tools.colonoscopy_tester - INFO - Waiting for classification to complete...
+2025-11-25 11:04:08,293 - tools.colonoscopy_tester - INFO - Processing completed (Result card found)
+2025-11-25 11:04:08,293 - tools.colonoscopy_tester - INFO - Extracting MES classification...
+2025-11-25 11:04:08,299 - tools.colonoscopy_tester - INFO - Found MES score in result card: 0
+2025-11-25 11:04:08,300 - tools.colonoscopy_tester - INFO - Resetting webapp for next image...
+2025-11-25 11:04:08,305 - tools.colonoscopy_tester - INFO - Clicking 'Analyze New Image' button
+2025-11-25 11:04:10,327 - tools.colonoscopy_tester - INFO - Testing image: /Users/iganarendra/.gemini/antigravity/scratch/colonomind-tester/test_images/MES0/2119649_20220217_ES_1_23_23.jpg
+2025-11-25 11:04:10,328 - tools.colonoscopy_tester - INFO - Uploading image: 2119649_20220217_ES_1_23_23.jpg
+2025-11-25 11:04:10,354 - tools.colonoscopy_tester - INFO - Image file sent to upload input
+2025-11-25 11:04:11,073 - tools.colonoscopy_tester - INFO - Found 'Start Analysis' button, clicking...
+2025-11-25 11:04:11,093 - tools.colonoscopy_tester - INFO - Waiting for classification to complete...
+2025-11-25 11:04:13,283 - tools.colonoscopy_tester - INFO - Processing completed (Result card found)
+2025-11-25 11:04:13,283 - tools.colonoscopy_tester - INFO - Extracting MES classification...
+2025-11-25 11:04:13,289 - tools.colonoscopy_tester - INFO - Found MES score in result card: 3
+2025-11-25 11:04:13,289 - tools.colonoscopy_tester - INFO - Resetting webapp for next image...
+2025-11-25 11:04:13,294 - tools.colonoscopy_tester - INFO - Clicking 'Analyze New Image' button
+2025-11-25 11:04:15,317 - tools.colonoscopy_tester - INFO - Testing image: /Users/iganarendra/.gemini/antigravity/scratch/colonomind-tester/test_images/MES0/4283115_20240801_ES_1_29_29.jpg
+2025-11-25 11:04:15,318 - tools.colonoscopy_tester - INFO - Uploading image: 4283115_20240801_ES_1_29_29.jpg
+2025-11-25 11:04:15,347 - tools.colonoscopy_tester - INFO - Image file sent to upload input
+2025-11-25 11:04:16,721 - tools.colonoscopy_tester - INFO - Found 'Start Analysis' button, clicking...
+2025-11-25 11:04:16,745 - tools.colonoscopy_tester - INFO - Waiting for classification to complete...
+2025-11-25 11:04:18,984 - tools.colonoscopy_tester - INFO - Processing completed (Result card found)
+2025-11-25 11:04:18,984 - tools.colonoscopy_tester - INFO - Extracting MES classification...
+2025-11-25 11:04:18,992 - tools.colonoscopy_tester - INFO - Found MES score in result card: 2
+2025-11-25 11:04:18,992 - tools.colonoscopy_tester - INFO - Resetting webapp for next image...
+2025-11-25 11:04:18,997 - tools.colonoscopy_tester - INFO - Clicking 'Analyze New Image' button
+2025-11-25 11:04:21,019 - tools.colonoscopy_tester - INFO - Testing image: /Users/iganarendra/.gemini/antigravity/scratch/colonomind-tester/test_images/MES0/2610968_20241213_ES_1_21_21.jpg
+2025-11-25 11:04:21,020 - tools.colonoscopy_tester - INFO - Uploading image: 2610968_20241213_ES_1_21_21.jpg
+2025-11-25 11:04:21,046 - tools.colonoscopy_tester - INFO - Image file sent to upload input
+2025-11-25 11:04:21,717 - tools.colonoscopy_tester - INFO - Found 'Start Analysis' button, clicking...
+2025-11-25 11:04:21,737 - tools.colonoscopy_tester - INFO - Waiting for classification to complete...
+2025-11-25 11:04:24,079 - tools.colonoscopy_tester - INFO - Processing completed (Result card found)
+2025-11-25 11:04:24,080 - tools.colonoscopy_tester - INFO - Extracting MES classification...
+2025-11-25 11:04:24,086 - tools.colonoscopy_tester - INFO - Found MES score in result card: 3
+2025-11-25 11:04:24,086 - __main__ - INFO - 
+[Step 5/5] Generating reports...
+2025-11-25 11:04:24,091 - tools.results_analyzer - INFO - Detailed results saved to results/results_detailed.csv
+2025-11-25 11:04:24,091 - __main__ - INFO - ✓ Detailed results: results/results_detailed.csv
+2025-11-25 11:04:24,094 - tools.results_analyzer - INFO - Summary saved to results/results_summary.json
+2025-11-25 11:04:24,094 - __main__ - INFO - ✓ Summary: results/results_summary.json
+2025-11-25 11:04:24,346 - tools.results_analyzer - INFO - Confusion matrix saved to results/confusion_matrix.png
+2025-11-25 11:04:24,347 - __main__ - INFO - ✓ Confusion matrix: results/confusion_matrix.png
+2025-11-25 11:04:24,347 - tools.results_analyzer - INFO - Report saved to results/REPORT.md
+2025-11-25 11:04:24,347 - __main__ - INFO - ✓ Report: results/REPORT.md
+2025-11-25 11:04:24,347 - __main__ - INFO - 
+Cleaning up...
+2025-11-25 11:04:24,420 - tools.colonoscopy_tester - INFO - WebDriver closed
+2025-11-25 11:04:24,420 - __main__ - INFO - 
+================================================================================
+2025-11-25 11:04:24,420 - __main__ - INFO - TESTING COMPLETE
+2025-11-25 11:04:24,420 - __main__ - INFO - ================================================================================
+2025-11-25 11:04:24,420 - __main__ - INFO - Total images processed: 5
+2025-11-25 11:04:24,420 - __main__ - INFO - Failed tests: 0
+2025-11-25 11:04:24,420 - __main__ - INFO - Success rate: 100.0%
+2025-11-25 11:04:24,420 - __main__ - INFO - 
+Results saved to: ./results
+2025-11-25 11:04:24,420 - __main__ - INFO - ================================================================================
